@@ -1,0 +1,63 @@
+.menuB{
+position: fixed;
+width: 100vw;
+height: 100vh;
+top: 50px;
+right: 0;
+}
+.blur {
+    width: 100vw;
+    height: 100vh;
+    left: 30%;
+    backdrop-filter: blur(2px);
+    position:absolute;
+
+}
+           
+.menu__content {
+    /*width: 30%;
+    height: 100%;*/
+    background-color: black;
+    display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
+}  
+
+.menu__header{
+    padding: 10px;
+    font-size: 1,5rem;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+
+}
+  
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+align-items: center;
+margin: 10px 0px;
+}
+
+.btnMenu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background-color: rgb(3, 3, 3);
+    color: rgba(255, 248, 248, 0.87);
+   }
+
+   .css-184mzhy-MuiButtonBase-root-MuiIconButton-root {
+    font-size: 2rem;
+    position: absolute;
+    right: 5px;
+    top: 10%;
+}

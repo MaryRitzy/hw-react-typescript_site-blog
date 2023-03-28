@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-video-slider{
+    position: absolute, relative;
+    z-index: -3;
+    width: 100%, 100%;
+    height:  1300px;
+    background: #0f0f0f;
+    background: url('/assets/image/wall2d.png') 0% 0%/100% 50rem no-repeat, url('/assets/image/home_kalush_bg.jpg') 50%/cover no-repeat;
+      /*overflow-x: visible;*/
+     
+  }
+  
+
+.container-video-slide {
+    margin: 8px 150px;
+    display: flexbox;
+    margin: 0 auto;  
+    align-content: center;
+    justify-content: space-around;
+}
+
+  .quotation-marks{
+    font-family: 'Oswald', sans-serif;
+    font-size: 150px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.505);
+    margin-bottom: -130px;
+  
+  }
+  
+  .quotes{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+   /* margin: 0px 40px;*/
+    
+  }
+
+  
+.author-word{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;  
+   
+   /* margin: 20px 40px;*/
+  
+  }
+  

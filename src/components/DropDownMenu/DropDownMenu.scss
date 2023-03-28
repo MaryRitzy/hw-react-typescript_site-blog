@@ -1,0 +1,23 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    background-color: rgba(77, 74, 74, 0.353);
+    color: rgba(253, 248, 248, 0.87);
+    
+}
+hr{
+  opacity: 0.1;
+}
