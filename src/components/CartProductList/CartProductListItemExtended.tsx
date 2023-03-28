@@ -2,7 +2,7 @@ import { Card, CardContent, Grid, CardActions } from '@mui/material'
 
 import { Product } from 'utils/productsArray'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-
+import { removeLike } from '../../redux/likeReducer'
 import { removeProductFromCart } from 'redux/cartReducer'
 import { useAppDispatch } from 'redux/hooks'
 
@@ -29,7 +29,8 @@ const CartProductListItemExtended = ({ product }: Props) => {
                 <CardActions>
                     <FavoriteIcon
                         onClick={() =>
-                            dispatch(removeProductFromCart(product.id))
+                            dispatch(removeProductFromCart(product.id)) &&
+                            dispatch(removeLike(product.id))
                         }
                     />
                 </CardActions>

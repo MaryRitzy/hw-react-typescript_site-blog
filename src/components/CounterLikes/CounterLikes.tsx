@@ -10,7 +10,16 @@ const CounterLikes = () => {
     return (
         <>
             <div className="favorites-count">
-                <FavoriteIcon />{' '}
+                {/* <FavoriteIcon />{' '}*/}
+                {Object.keys(productsInCart).reduce(
+                    (total, productId) =>
+                        total + productsInCart[parseInt(productId)],
+                    0
+                ) === 0 ? (
+                    <FavoriteBorderIcon />
+                ) : (
+                    <FavoriteIcon />
+                )}
                 {Object.keys(productsInCart).reduce(
                     (total, productId) =>
                         total + productsInCart[parseInt(productId)],
