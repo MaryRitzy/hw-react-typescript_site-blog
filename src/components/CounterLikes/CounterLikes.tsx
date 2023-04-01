@@ -1,4 +1,3 @@
-/*import CartTotal from 'components/CartTotal/CartTotal'*/
 import { useAppSelector } from 'redux/hooks'
 import './CounterLikes.scss'
 

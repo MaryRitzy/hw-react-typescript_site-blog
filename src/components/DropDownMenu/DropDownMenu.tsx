@@ -7,8 +7,6 @@ import Fade from '@mui/material/Fade'
 import './DropDownMenu.scss'
 import { Link } from 'react-router-dom'
 
-type Props = {}
-
 const DropDownMenu = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
     const open = Boolean(anchorEl)

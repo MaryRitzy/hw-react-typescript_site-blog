@@ -1,10 +1,10 @@
 import React from 'react'
-import Box from '@mui/system/Box'
+
 import Grid from '@mui/system/Unstable_Grid'
-import styled from '@mui/system/styled'
+
 import './Footer.scss'
 import { Button } from '@mui/material'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import EastIcon from '@mui/icons-material/East'
 import SosialLink from 'components/SosialLink/SosialLink'
 import Divider from '@mui/joy/Divider/Divider'

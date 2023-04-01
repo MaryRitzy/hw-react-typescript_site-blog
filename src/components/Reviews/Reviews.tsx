@@ -9,7 +9,6 @@ import {
 } from '@mui/material'
 import './Reviews.scss'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
-import { red, yellow } from '@mui/material/colors'
 
 type Props = {}
 type Review = {

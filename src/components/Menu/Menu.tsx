@@ -1,4 +1,3 @@
-/*import Category from 'components/Category/Category'*/
 import DropDownMenu from 'components/DropDownMenu/DropDownMenu'
 
 import MenuItem from './MenuItem'

@@ -11,7 +11,6 @@ const SecondPosterVideoSlider = (props: Props) => {
                     container
                     maxWidth="lg"
                     rowSpacing={1}
-                    /*columnSpacing={{ xs: 1, sm: 2, md: 3 }}*/
                     className="container-video-slide"
                 >
                     <Grid item xs={12} sm={8} md={6}>

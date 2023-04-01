@@ -6,47 +6,11 @@ import ReactPaginate from 'react-paginate'
 import productsArray from 'utils/productsArray'
 import './Pagination.scss'
 
-// Example items, to simulate fetching from another resources.
-/*const items = [productsArray]
-
-function Items({ currentItems }) {
-    return (
-        <>
-            {currentItems &&
-                currentItems.map(
-                    (
-                        item:
-                            | string
-                            | number
-                            | boolean
-                            | React.ReactElement<
-                                  any,
-                                  string | React.JSXElementConstructor<any>
-                              >
-                            | React.ReactFragment
-                            | React.ReactPortal
-                            | null
-                            | undefined
-                    ) => (
-                        <div>
-                            <h3>Item #{item}</h3>
-                        </div>
-                    )
-                )}
-        </>
-    )
-}*/
-
 function PaginatedItems() {
-    // Here we use item offsets; we could also use page offsets
-    // following the API or data you're working with.
     const [items] = useState(productsArray.slice(0, 10))
     const itemsPerPage = 4
     const [itemOffset, setItemOffset] = useState(0)
 
-    // Simulate fetching items from another resources.
-    // (This could be items from props; or items loaded in a local state
-    // from an API endpoint with useEffect and useState)
     const endOffset = itemOffset + itemsPerPage
     console.log(`Loading items from ${itemOffset} to ${endOffset}`)
     const currentItems = items.slice(itemOffset, endOffset).map((items) => {
@@ -64,7 +28,6 @@ function PaginatedItems() {
     })
     const pageCount = Math.ceil(items.length / itemsPerPage)
 
-    // Invoke when user click to request another page.
     const handlePageClick = (event: { selected: number }) => {
         const newOffset = (event.selected * itemsPerPage) % items.length
         console.log(
@@ -96,8 +59,3 @@ function PaginatedItems() {
 }
 
 export default PaginatedItems
-// Add a <div id="container"> to your HTML to see the component rendered.
-/*ReactDOM.render(
-    <PaginatedItems itemsPerPage={4} />,
-    document.getElementById('container')
-)*/
