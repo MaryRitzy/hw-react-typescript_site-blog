@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 
 import ProductsListItem from 'components/ProductsList/ProductsListItem'
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import productsArray from 'utils/productsArray'
 import './Category.scss'

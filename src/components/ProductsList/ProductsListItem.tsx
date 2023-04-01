@@ -1,4 +1,4 @@
-import { Button, Card, CardContent } from '@mui/material'
+import { Card, CardContent } from '@mui/material'
 import './ProductsListItem.scss'
 import React, { useState } from 'react'
 import '../../container/App/App.tsx'
@@ -6,14 +6,12 @@ import '../../container/App/App.tsx'
 import { removeProductFromCart } from 'redux/cartReducer'
 import TextSnippetIcon from '@mui/icons-material/TextSnippet'
 import PersonIcon from '@mui/icons-material/Person'
-
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from '../../redux/likeReducer'
 import { addProductToCart } from 'redux/cartReducer'
 import { Link } from 'react-router-dom'
-import { MenuItem } from '@mui/joy'
 
 type Props = {
     id: number

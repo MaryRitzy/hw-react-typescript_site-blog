@@ -2,27 +2,27 @@
     padding: 1px 1px;
     max-width: 460px;
     max-height: 800px;
-   background-color: transparent;
+    background-color: transparent;
     color: aliceblue;
-    box-shadow: -2px 3px 3px 3px rgba(17, 17, 17, 0.289);;
+    box-shadow: -2px 3px 3px 3px rgba(17, 17, 17, 0.289);
     margin: 10px;
 }
 
 .product-title {
     font-size: 28px;
     margin-bottom: 2px;
-    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
     line-height: 100%;
     padding: 2px 15px;
-   vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 .product-desc {
     font-size: 14px;
-    
+
     padding: 7px 15px;
     color: rgba(220, 220, 213, 0.599);
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 .product-features {
     font-size: 16px;
@@ -39,23 +39,22 @@
     img {
         max-width: 425px;
         height: auto;
-        padding: 0px;  
+        padding: 0px;
         margin: 0px;
         border-radius: 5px 5px 5px 5px;
-            } 
-    
+    }
 }
 
-.product-image:hover{
-   overflow: hidden;
-   cursor: pointer;
-   transform: scale(1.05);
-  transition: all .3s ease-in-out;
+.product-image:hover {
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
-.post-footer{
+.post-footer {
     display: block;
-    background: rgba(0,0,0,.02);
+    background: rgba(0, 0, 0, 0.02);
     padding: 7px 15px;
     overflow: hidden;
     line-height: 30px;
@@ -63,96 +62,85 @@
     box-sizing: border-box;
 }
 
-.button-love{
+.button-love {
     float: left;
     color: rgba(255, 255, 0, 0.599);
 }
 
-.button-link{
+.button-link {
     float: right;
     padding-left: 5px;
     text-decoration: none;
     color: rgba(255, 255, 0, 0.556);
 }
 
-.icon-post{
+.icon-post {
     float: right;
     padding-left: 0px;
- 
+
     color: rgba(100, 100, 44, 0.721);
 }
 
-.author-data-categoty{
+.author-data-categoty {
     display: block;
-    background: rgba(0,0,0,.02);
+    background: rgba(0, 0, 0, 0.02);
     padding: 7px 15px;
     overflow: hidden;
-       margin: 2px 2px 0;
+    margin: 2px 2px 0;
     box-sizing: border-box;
 }
 
-.post-сategory{
+.post-сategory {
     float: left;
     color: rgba(220, 220, 213, 0.599);
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-.date-icon-admin{
+.date-icon-admin {
     display: flex;
     float: right;
     padding-left: 5px;
- 
+
     color: rgba(232, 232, 222, 0.721);
 }
 
-.post-data{
+.post-data {
     margin-left: 8px;
-font-size: 14px;
-font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-.admin-title{
+.admin-title {
     color: rgba(232, 232, 222, 0.721);
     font-size: 14px;
     border: 0px;
     border-bottom-width: 1px;
     border-style: dotted;
-    text-decoration: none!important;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-.icon-admin{
+.icon-admin {
     font-size: 18px;
     margin-right: 2px;
-
 }
 
-
-  
-
-
-
-.bg1{
+.bg1 {
     position: absolute;
-    
+
     z-index: -1;
     width: 100%;
-   height: 2000px;
-  
+    height: 2000px;
     background: #0f0f0f;
     background-image: url('/assets/image/home_kalush_bg.jpg');
-   
     background-position: 50% 50%;
     background-size: cover;
-  
-  }
+}
 
-  .article-grid {
+.article-grid {
     display: flexbox;
     margin: 10px auto;
-  }
-
-
+}
 
 .MuiCardContent-root {
     padding: 2px;

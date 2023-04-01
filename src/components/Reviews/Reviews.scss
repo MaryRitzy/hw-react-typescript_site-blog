@@ -1,45 +1,42 @@
-.bg-reviews{
-position: inherit;
-z-index: -3;
-width: 100%;
-height:  700px;
-background: #0f0f0f;
-background: url('/assets/image/home_kalush_bg.jpg') 50%/cover no-repeat;  /*overflow-x: visible;*/
- 
+.bg-reviews {
+    position: inherit;
+    z-index: -3;
+    width: 100%;
+    height: 700px;
+    background: #0f0f0f;
+    background: url('/assets/image/home_kalush_bg.jpg') 50% / cover no-repeat;
 }
 
 .reviews-pulpage {
-  
     max-width: 1000px;
     margin: 0px auto;
     justify-content: center;
     background-color: transparent;
 }
-.review-icon{
+.review-icon {
     display: flex;
 }
-.reviews-form{
-display: block;
-text-align: center ;
-margin: 2px auto;
-justify-content: center;
-align-items: center;
+.reviews-form {
+    display: block;
+    text-align: center;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
 }
-.name-style{
+.name-style {
     color: rgba(156, 156, 40, 0.923);
 }
 
-.title-revies{
-margin-bottom: 10px;
-text-align: left;
-font-size: 28px;
-color: rgba(117, 117, 50, 0.829);
-font-family: "Roboto", Helvetica, Arial, sans-serif;
-border-bottom: 1px dotted rgba(117, 117, 50, 0.829);
+.title-revies {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 28px;
+    color: rgba(117, 117, 50, 0.829);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    border-bottom: 1px dotted rgba(117, 117, 50, 0.829);
 }
-textarea{
+textarea {
     background-color: transparent;
-
 }
 .css-1s0hl0f-MuiPaper-root-MuiCard-root {
     padding: 7px 15px;
@@ -49,13 +46,12 @@ textarea{
     margin: 20px 0;
 }
 
-.title-form-reviews{
+.title-form-reviews {
     margin-bottom: 10px;
-color: rgba(143, 143, 53, 0.87);
-font-family: "Roboto", Helvetica, Arial, sans-serif;
-font-size: 22px;
+    color: rgba(143, 143, 53, 0.87);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 22px;
 }
-
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     height: 1.6em;
@@ -65,37 +61,35 @@ font-size: 22px;
 
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     color: rgba(143, 143, 53, 0.605);
-  }
+}
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border-color: rgba(255, 255, 0, 0.444);
 }
 
-
 textarea {
-     
-    border-color: -internal-light-dark(rgba(217, 220, 39, 0.693), rgba(214, 241, 8, 0.545));
-   
+    border-color: -internal-light-dark(
+        rgba(217, 220, 39, 0.693),
+        rgba(214, 241, 8, 0.545)
+    );
 }
-.form-reviewsBtn{
-margin-top: 10px;
-background-color:  rgba(143, 143, 53, 0.605);
-color: black;
-font-family: "Roboto", Helvetica, Arial, sans-serif;
-border-color: rgba(182, 182, 51, 0.778);
-width: 210px;
-border-radius: 15px;
+.form-reviewsBtn {
+    margin-top: 10px;
+    background-color: rgba(143, 143, 53, 0.605);
+    color: black;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    border-color: rgba(182, 182, 51, 0.778);
+    width: 210px;
+    border-radius: 15px;
 }
-.form-reviewsBtn:hover{
+.form-reviewsBtn:hover {
     color: blue;
 }
 
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-  
     color: rgba(249, 249, 247, 0.599);
-    
 }
 
 textarea {
     color: #e8ebdcc0;
-  }
+}
