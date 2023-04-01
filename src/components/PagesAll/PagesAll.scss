@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.bg-full-page{
+  position: initial;
+  margin: -50px 0px 0px 0px;
+  padding: 0;
+   z-index: -3;
+  width: 100%;
+  height:  1100px;
+  background: #0f0f0f;
+  background: url('/assets/image/home_kalush_bg.jpg') 50%/cover no-repeat;  /*overflow-x: visible;*/
+   
+}
+.container-fullpage{
+   max-width: 1000px;
+  margin: 30px auto 10px auto;
+}
+.product-post{
+ padding-top: 2px;
+    background-color: transparent;
+    color: aliceblue;
+    box-shadow: -2px 3px 3px 3px rgba(17, 17, 17, 0.289);;
+
+}
+
+
+.product-image-post {
+    text-align: center;
+       img {
+        max-width: 1000px;
+        height: auto;
+        padding: 0px;  
+        margin: 0px;
+              
+    } }
+
+    .product-image-post:hover{
+      overflow: hidden;
+      cursor: pointer;
+      transform: scale(1.03);
+     transition: all .3s ease-in-out;
+   }
+
+.comeBack-link{
+    text-decoration: none;
+    color: rgba(245, 7, 7, 0.892);
+    font-size: 16px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.comeBack-link{
+    color: rgba(197, 197, 36, 0.829);
+    text-decoration: underline;
+}
+
+.link-home{
+  display: flex;
+  z-index: -1;
+  margin-top: 120px;
+  flex: content;
+  }
+
+  
+  .button-love-fulpage{
+    float: right;
+    padding-right: 5px;
+    color: rgba(255, 255, 0, 0.599);
+
+  }
+
+  .product-title-pulpage{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    line-height: 100%;
+    padding: 2px 15px;
+   vertical-align: baseline;
+
+  }
+  .post-сategory-fullpage{
+    float: left;
+    color: rgba(220, 220, 213, 0.599);
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    padding: 7px 15px;
+
+  }

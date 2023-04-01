@@ -13,8 +13,8 @@ const ProductsList = () => {
                 <Grid
                     className="article-grid"
                     container
-                    maxWidth="lg"
-                    spacing={1}
+                    maxWidth="md"
+                    spacing={2}
                 >
                     {productsArray.map(
                         ({

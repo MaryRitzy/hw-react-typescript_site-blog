@@ -29,7 +29,7 @@ const DropDownMenu = () => {
                 onClick={handleClick}
                 className="dropdown"
             >
-                Dashboard
+                Categories
             </Button>
             <Menu
                 id="fade-menu"
@@ -41,15 +41,15 @@ const DropDownMenu = () => {
                 onClose={handleClose}
                 TransitionComponent={Fade}
             >
-                <MenuItem component={Link} to={'/news'}>
+                <MenuItem component={Link} to={'/News'}>
                     News
                 </MenuItem>
                 <hr />
-                <MenuItem component={Link} to={'/team'}>
+                <MenuItem component={Link} to={'/Team'}>
                     Team
                 </MenuItem>
                 <hr />
-                <MenuItem component={Link} to={'/album'}>
+                <MenuItem component={Link} to={'/Album'}>
                     Album
                 </MenuItem>
             </Menu>

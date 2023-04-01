@@ -1,10 +1,4 @@
-.menuB{
-position: fixed;
-width: 100vw;
-height: 100vh;
-top: 50px;
-right: 0;
-}
+
 .blur {
     width: 100vw;
     height: 100vh;
@@ -44,20 +38,21 @@ align-items: center;
 margin: 10px 0px;
 }
 
-.btnMenu{
-    display: flex;
-    justify-content: flex-end;
-}
-
 
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
     background-color: rgb(3, 3, 3);
     color: rgba(255, 248, 248, 0.87);
    }
 
-   .css-184mzhy-MuiButtonBase-root-MuiIconButton-root {
+
+.css-184mzhy-MuiButtonBase-root-MuiIconButton-root {
     font-size: 2rem;
-    position: absolute;
-    right: 5px;
-    top: 10%;
+    position: relative; 
+    right: 0px;
+    top: 0;
+    padding: 0px;
+margin-left: 30px;
+}
+.css-184mzhy-MuiButtonBase-root-MuiIconButton-root:hover{
+    box-shadow: 0px 0px 0px 5px rgba(242, 242, 242, 0.088);
 }

@@ -2,74 +2,53 @@ import { Grid } from '@mui/material'
 
 import ProductsListItem from 'components/ProductsList/ProductsListItem'
 import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import productsArray from 'utils/productsArray'
 import './Category.scss'
 
-type Props = {
-    id: number
-    title: string
-    description: string
-    сategory: string
-    capacity: string
-    price: number
-    image: string
-}
-/*type Props = {}*/
-const Category = ({
-    id,
-    title,
-    description,
-    сategory,
-    capacity,
-    price,
-    image,
-}: Props) => {
-    const [data, setData] = useState(productsArray)
+type Props = {}
 
-    const filterResult = (category: string) => {
-        const result = productsArray.filter((curData) => {
-            return curData.сategory === category
-        })
+const Category = (props: Props) => {
+    const { category } = useParams()
 
-        setData(result)
-    }
+    const categoryArray = productsArray.filter(
+        (article) => article.сategory === category
+    )
+
     return (
         <>
-            <div className="text-center text-info">Category</div>
-            <div>
-                <div>
-                    <button onClick={() => filterResult('News')}>News</button>
-                    <button onClick={() => filterResult('Team')}>Team</button>
-                    <button onClick={() => filterResult('Album')}>Album</button>
-                </div>
-            </div>
-            <div>
-                {data.map((values) => {
-                    const {} = values
-                    return (
-                        <>
-                            <Grid
-                                className="article-grid"
-                                container
-                                maxWidth="lg"
-                                spacing={1}
-                            >
-                                <Grid item xs={12} sm={6} md={6} key={id}>
+            <div className="bg-category">
+                <Grid
+                    className="category-grid"
+                    container
+                    maxWidth="md"
+                    spacing={2}
+                >
+                    {categoryArray.map((article) => {
+                        return (
+                            <>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={6}
+                                    md={6}
+                                    key={article.id}
+                                >
                                     {' '}
                                     <ProductsListItem
-                                        id={values.id}
-                                        image={values.image}
-                                        title={values.title}
-                                        description={values.description}
-                                        сategory={values.сategory}
-                                        capacity={values.capacity}
-                                        price={values.price}
+                                        id={article.id}
+                                        image={article.image}
+                                        title={article.title}
+                                        description={article.description}
+                                        сategory={article.сategory}
+                                        capacity={article.capacity}
+                                        price={article.price}
                                     />
                                 </Grid>
-                            </Grid>
-                        </>
-                    )
-                })}
+                            </>
+                        )
+                    })}
+                </Grid>
             </div>
         </>
     )

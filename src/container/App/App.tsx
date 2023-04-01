@@ -9,7 +9,7 @@ import { Route } from 'react-router-dom'
 
 import CartPage from 'pages/Cart/CartPage'
 import PagesAll from 'components/PagesAll/PagesAll'
-
+import './App.scss'
 import Category from 'components/Category/Category'
 
 type Props = {}
@@ -22,52 +22,9 @@ const App = (props: Props) => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="favorites" element={<CartPage />} />
-                <Route path="post" element={<PagesAll />} />
-                <Route
-                    path="news"
-                    element={
-                        <Category
-                            id={0}
-                            title={''}
-                            description={''}
-                            сategory={''}
-                            capacity={''}
-                            price={0}
-                            image={''}
-                        />
-                    }
-                />
-                <Route
-                    path="team"
-                    element={
-                        <Category
-                            id={0}
-                            title={''}
-                            description={''}
-                            сategory={''}
-                            capacity={''}
-                            price={0}
-                            image={''}
-                        />
-                    }
-                />
-                <Route
-                    path="album"
-                    element={
-                        <Category
-                            id={0}
-                            title={''}
-                            description={''}
-                            сategory={''}
-                            capacity={''}
-                            price={0}
-                            image={''}
-                        />
-                    }
-                />
+                <Route path="/:category/:id" element={<PagesAll />} />
+                <Route path="/:category" element={<Category />} />
             </Routes>
-
-            <Footer />
         </StyledEngineProvider>
     )
 }

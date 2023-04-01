@@ -4,3 +4,24 @@
    /* background: linear-gradient(to bottom, hwb(0 0% 100%) 98%, transparent 90%);*/
     box-shadow: 0px 10px 20px rgba(17, 16, 16, 0.94);
 }
+.header-menu{
+    display: block;
+}
+
+.logo-kalush{
+    float: left;
+}
+
+.like-count-menu{
+    margin-top: 15px;
+    float: right;
+   display: flex;
+}
+.favorite-page{
+    padding-top: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+}

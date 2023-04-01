@@ -7,6 +7,9 @@ import {
     TextField,
     TextareaAutosize,
 } from '@mui/material'
+import './Reviews.scss'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+import { red, yellow } from '@mui/material/colors'
 
 type Props = {}
 type Review = {
@@ -17,15 +20,15 @@ const Reviews = (props: Props) => {
     const arrReviews: Review[] = [
         {
             name: 'Христина',
-            text: 'Покупкою задоволена на всі 100!!!! Гарний дизайн, приємний колір, легкий, зручно поміщається в жіночій руці. Як на мене слабкувата камера - у самсунга буде яскравіша. Але яблучна продукція, як завжди, відповідає своєму високому рівню!',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta, accusamus illum, labore natus recusandae dolores dolorum esse nam pariatur nemo possimus nesciunt quia vel neque optio sunt provident sint.',
         },
         {
             name: 'Ольга',
-            text: 'Брав на заміну старому XS, дуже задоволений! Був приємно вражений що на коробці з заводу є qr коди які ведуть на apple.com на посібник користувача і гарантію, а раніше такого не було, давали просто гарантії',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta, accusamus illum, labore natus recusandae dolores dolorum esse nam pariatur nemo possimus nesciunt quia vel neque optio sunt provident sint.',
         },
         {
             name: 'Iнна',
-            text: 'Покупкою задоволена на всі 100!!!! Гарний дизайн, приємний колір, легкий, зручно поміщається в жіночій руці. Як на мене слабкувата камера - у самсунга буде яскравіша. Але яблучна продукція, як завжди, відповідає своєму високому рівню!',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta, accusamus illum, labore natus recusandae dolores dolorum esse nam pariatur nemo possimus nesciunt quia vel neque optio sunt provident sint.',
         },
     ]
 
@@ -66,42 +69,64 @@ const Reviews = (props: Props) => {
 
     return (
         <>
-            <Typography variant="h4" component="h2" sx={{ margin: '60px 0' }}>
-                Reviews
-            </Typography>
-            <div>
-                {reviews.map((item, i) => (
-                    <Card variant="outlined" sx={{ margin: '20px 0' }} key={i}>
-                        <CardContent>
-                            <div>Name:{item.name}</div> {/*можна, без Name*/}
-                            <p>{item.text}</p>
-                        </CardContent>
-                    </Card>
-                ))}
+            <div className="bg-reviews">
+                <div className="reviews-pulpage">
+                    <Typography className="title-revies">Reviews:</Typography>
+                    <div>
+                        {reviews.map((item, i) => (
+                            <Card
+                                variant="outlined"
+                                sx={{ margin: '20px 0' }}
+                                key={i}
+                            >
+                                <CardContent>
+                                    <div className="review-icon">
+                                        <AccountCircleIcon />
+                                        <div className="name-style">
+                                            {item.name}
+                                        </div>{' '}
+                                    </div>
+                                    <p>{item.text}</p>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                    <form onSubmit={onSend} className="reviews-form">
+                        <div className="title-form-reviews">
+                            Please leave a reviews
+                        </div>
+                        <div>
+                            <TextField
+                                label="Name"
+                                value={newReview.name}
+                                onChange={handleName}
+                            />
+                        </div>
+                        <br />
+                        <div>
+                            <TextareaAutosize
+                                minRows={5}
+                                placeholder="Text"
+                                value={newReview.text}
+                                onChange={handleText}
+                                style={{
+                                    height: 42,
+                                    width: 210,
+                                    borderColor: 'rgba(255, 255, 0, 0.444)',
+                                    borderRadius: 3,
+                                }}
+                            />
+                        </div>
+                        <Button
+                            variant="outlined"
+                            type="submit"
+                            className="form-reviewsBtn"
+                        >
+                            Send
+                        </Button>
+                    </form>
+                </div>
             </div>
-            <form onSubmit={onSend}>
-                <h3>Please leave a reviews</h3>
-                <div>
-                    <TextField
-                        label="Name"
-                        value={newReview.name}
-                        onChange={handleName}
-                    />
-                </div>
-                <br />
-                <div>
-                    <TextareaAutosize
-                        minRows={5}
-                        placeholder="Text"
-                        value={newReview.text}
-                        onChange={handleText}
-                    />
-                </div>
-                <Button variant="outlined" type="submit">
-                    Send
-                </Button>
-                {/*можна variant="contained" тоді кнопка в кольорі*/}
-            </form>
         </>
     )
 }

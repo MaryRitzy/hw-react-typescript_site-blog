@@ -21,3 +21,77 @@
 hr{
   opacity: 0.1;
 }
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  
+  display: inline-flex;
+  
+  align-items: center;
+
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+ 
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+ 
+  user-select: none;
+  vertical-align: middle;
+  
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #f0f4f7;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  display: flexbox;
+ 
+  color: #fff;
+}
+.dropdown {
+  display: flex;
+  position: relative;
+  margin: 0px auto;
+}
+
+/*.css-1e6y48t-MuiButtonBase-root-MuiButton-root::before {
+  content: "";
+  display: inline-block;
+  
+  color: white;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  background-image: url('/../../image/down-arrow-svgrepo-com.svg');
+}  
+*/
+
+
+
+/*
+.dropdown::before {
+    content: "";
+    display: inline-block;
+    
+    color: white !important;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-image: url('/../../image/down-arrow-svgrepo-com.svg');
+  }*/

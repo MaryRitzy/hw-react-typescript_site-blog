@@ -1,37 +1,43 @@
-import { Typography } from '@mui/joy'
-import { Grid } from '@mui/material'
+import Reviews from 'components/Reviews/Reviews'
+import { NavLink, useParams } from 'react-router-dom'
 
 import productsArray from 'utils/productsArray'
 import PagesAllItem from './PagesAllItem'
 
 type Props = {}
 const PagesAll = (props: Props) => {
-    const postId = new URLSearchParams(window.location.search).get('id')
-    const post = productsArray.find(
-        (Product) => Product.id.toString() === postId
-    )
-    console.log(window.location.search)
-    console.log(postId)
-    console.log(post)
+    const { id } = useParams()
+    const post = productsArray.find((article) => article.id === Number(id))
 
     return (
         <>
-            <Typography> post</Typography>
-
-            {post && (
-                <Grid item xs={12} sm={6} md={6}>
-                    {' '}
-                    <PagesAllItem
-                        id={post.id}
-                        image={post.image}
-                        title={post.title}
-                        description={post.description}
-                        сategory={post.сategory}
-                        capacity={post.capacity}
-                        price={post.price}
-                    />
-                </Grid>
-            )}
+            <div className="bg-full-page">
+                <div className="containert">
+                    <div>
+                        <div className="link-home">
+                            <NavLink className="comeBack-link" to="/">
+                                Home
+                            </NavLink>
+                        </div>
+                        <div className="container-fullpage">
+                            {post && (
+                                <PagesAllItem
+                                    id={post.id}
+                                    image_post={post.image_post}
+                                    title={post.title}
+                                    description_fullpage={
+                                        post.description_fullpage
+                                    }
+                                    сategory={post.сategory}
+                                    capacity={post.capacity}
+                                    price={post.price}
+                                />
+                            )}
+                        </div>
+                        <Reviews />
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

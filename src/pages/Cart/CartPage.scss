@@ -1,0 +1,15 @@
+.bg-favorites{
+    position: inherit;
+    
+    z-index: -1;
+    width: 100%;
+   height: 2000px;
+  
+    background: #0f0f0f;
+    background-image: url('/assets/image/home_kalush_bg.jpg');
+    /*background-repeat: repeat;*/
+    background-position: 50% 50%;
+    background-size: cover;
+    /*justify-content: center;
+    text-align: center;*/
+  }

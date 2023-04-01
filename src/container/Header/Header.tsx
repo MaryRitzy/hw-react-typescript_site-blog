@@ -17,12 +17,17 @@ const Header = (props: Props) => {
     return (
         <AppBar position="fixed" className="app-bar">
             <Container>
-                <Toolbar>
-                    <Logo />
-
-                    <Link to="/favorites">Favorites</Link>
-                    <CounterLikes />
-                    <MenuBurger />
+                <Toolbar className="header-menu">
+                    <div className="logo-kalush">
+                        <Logo />
+                    </div>
+                    <div className="like-count-menu">
+                        <Link className="favorite-page" to="/favorites">
+                            Favorites
+                        </Link>
+                        <CounterLikes />
+                        <MenuBurger />
+                    </div>
                 </Toolbar>
             </Container>
         </AppBar>
