@@ -28,6 +28,7 @@ const MenuBurger = (props: Props) => {
                 anchor="right"
                 open={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
+                sx={{ backgroundColor: 'back' }}
             >
                 <Box
                     p={1}
